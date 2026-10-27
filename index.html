@@ -525,7 +525,7 @@ async function clientFlow(){
   await say(id,`Подборка референсов под настроение «${(x.mood[0]||'как в кино')}». Отметьте, что нравится:${pics}<div class="kb"><span>❤ 1</span><span>❤ 2</span><span>❤ 3</span></div><time>сейчас</time>`,0,600);
   await say(id,'Второй — прям моё 😍',1,900);
   if(id!==flowId)return;add(`${prev.getDate()} ${MONG[prev.getMonth()]}`,'sep');
-  await say(id,`Завтра в ${x.t} съёмка 📷 Возьмите 2 образа и удобную обувь. Точку встречи пришлю утром.<div class="kb"><span>✓ Буду</span><span>Перенести</span></div><time>18:00</time>`,0,500);
+  await say(id,`Завтра в ${x.t} съёмка 📷 ${x.x.n==="Мини"?"Возьмите образ":"Возьмите 2 образа"} и удобную обувь. Точку встречи пришлю утром.<div class="kb"><span>✓ Буду</span><span>Перенести</span></div><time>18:00</time>`,0,500);
   if(id!==flowId)return;add('через 2 дня после съёмки','sep');
   await say(id,`Превью готовы! Полная галерея будет до конца недели ✨${pics}<time>12:00</time>`,0,600);
 }
